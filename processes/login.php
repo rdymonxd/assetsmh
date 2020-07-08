@@ -16,7 +16,7 @@ $msg="No se pudo acceder";
         if($u):
             foreach($u as $data):
                 $_SESSION['administrador'] = $data['name'];
-                $msg="Welcome";
+                $msg=$data['name'];
             endforeach;
         endif;
     endif;

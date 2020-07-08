@@ -1,5 +1,6 @@
 <?php 
     session_start();
+    include "config.php";
     include "inc/header.php";
     if(isset($_SESSION['administrador']))
         $page=(isset($_GET['page'])) ? $_GET['page']:"index";    
